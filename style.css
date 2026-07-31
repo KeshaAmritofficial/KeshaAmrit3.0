@@ -95,131 +95,206 @@ a{
 }
 
 /* ==========================================
-   HERO
+   HERO SECTION
 ========================================== */
-.hero-title{
-    color:#ffffff;
-    text-shadow:0 3px 10px rgba(0,0,0,.7);
-}
-.hero-title .white{
-    color:#FFFFFF;
-}
-.hero-subtitle{
-    color:#F8F8F8;
-    text-shadow:0 2px 8px rgba(0,0,0,.6);
-}
+
 .hero{
     position:relative;
     min-height:100vh;
     display:flex;
     align-items:center;
     overflow:hidden;
-    padding-top:90px;
+    padding:110px 0 80px;
 }
-.hero-text h1 {
-    color: #FFFFFF;
-}
-.hero::before{
-    content:"";
+
+.hero-bg{
     position:absolute;
     inset:0;
-    background:rgba(0,0,0,.30);
-}
-.hero-text h1 span {
-    color: #FFD700;
-}
-.hero-bottle{
-    width:170px;
-}
-.hero-text p {
-    color: #F5F5F5;
-}
-.hero-text h1,
-.hero-text p {
-    text-shadow: 0 2px 8px rgba(0,0,0,0.45);
-}
-.hero-bg{
     width:100%;
     height:100%;
     object-fit:cover;
-}
-@media (max-width:768px){
-
-.hero-bg{
-    object-position:right center;
-    opacity:.35;
+    z-index:0;
 }
 
-}
 .hero-overlay{
     position:absolute;
     inset:0;
-    .hero-overlay{
-    background:rgba(0,0,0,0.35);
-}
-}
-.hero-left h1{
-    color: #D4AF37 !important; /* Premium Gold */
-    text-shadow: 0 3px 10px rgba(0,0,0,0.7);
+    background:rgba(0,0,0,.38);
+    z-index:1;
 }
 
-.hero-text p{
-    color: #FFFFFF !important;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
-}
 .hero-content{
-    position:absolute;
-    top:18%;
-    left:50%;
-    transform:translateX(-50%);
-    z-index:10;
-}
-.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:1200px;
+    margin:auto;
+    padding:0 20px;
+
     display:grid;
-    grid-template-columns:0.9fr 1.1fr;
+    grid-template-columns:340px 1fr;
+    gap:70px;
     align-items:center;
-    gap:60px;
 }
-.hero-left{
-    order:2;
-}
+
+/* LEFT - Bottle */
 
 .hero-right{
-    order:1;
     display:flex;
     justify-content:center;
+    align-items:center;
 }
+
+.hero-bottle{
+    width:300px;
+    max-width:100%;
+    display:block;
+
+    filter:drop-shadow(0 25px 45px rgba(0,0,0,.35));
+
+    animation:floatBottle 4s ease-in-out infinite;
+}
+
+/* RIGHT - Content */
+
 .hero-left h1{
-    font-size:58px;
-    line-height:1.15;
-    color:#0d4b2b;
+    font-size:64px;
+    line-height:1.08;
+    color:#D4AF37;
     margin:20px 0;
+    font-weight:800;
 }
 
 .hero-left p{
-    font-size:18px;
-    color:#555;
-    max-width:560px;
+    font-size:20px;
+    color:#fff;
+    line-height:1.8;
+    max-width:600px;
 }
 
 .premium-badge{
     display:inline-block;
-    background:#e8f7ea;
+    background:#ffffff;
     color:#146536;
-    padding:10px 20px;
+    padding:12px 22px;
+    border-radius:40px;
+    font-size:15px;
+    font-weight:700;
+}
+
+.hero-features{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin:35px 0;
+}
+
+.feature{
+    background:#fff;
+    padding:15px 22px;
     border-radius:40px;
     font-weight:600;
-    font-size:14px;
 }
-.hero-bottle{
-    position: relative;
-    top: 45px;
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    margin-top:35px;
 }
+
+.btn-primary{
+    background:#1E8E4A;
+    color:#fff;
+}
+
+.btn-secondary{
+    background:#fff;
+    color:#146536;
+}
+
+.btn-primary,
+.btn-secondary{
+    padding:17px 34px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn-primary:hover{
+    transform:translateY(-4px);
+}
+
+.btn-secondary:hover{
+    transform:translateY(-4px);
+}
+
+/* Floating Bottle */
+
+@keyframes floatBottle{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-10px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:992px){
+
+.hero{
+padding:90px 0 60px;
+}
+
+.hero-content{
+grid-template-columns:1fr;
+text-align:center;
+gap:40px;
+}
+
+.hero-right{
+order:-1;
+}
+
 .hero-bottle{
-    width:520px;
-    margin:auto;
-    animation:floatBottle 4s ease-in-out infinite;
-    filter:drop-shadow(0 20px 35px rgba(0,0,0,.18));
+width:220px;
+}
+
+.hero-left h1{
+font-size:42px;
+}
+
+.hero-left p{
+font-size:17px;
+margin:auto;
+}
+
+.hero-features{
+justify-content:center;
+}
+
+.hero-buttons{
+flex-direction:column;
+align-items:center;
+}
+
+.btn-primary,
+.btn-secondary{
+width:100%;
+max-width:320px;
+text-align:center;
+}
+
 }
 /* ===============================
    MOBILE HERO FIX

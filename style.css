@@ -57,10 +57,12 @@ a{
     padding:14px 0;
 }
 
-..logo img{
-    width:100px;
+.logo img{
+    width:180px;
+    max-width:100%;
     height:auto;
 }
+
 }
 .order-btn{
     display:inline-flex;
@@ -1343,6 +1345,28 @@ html{
     color:#FFFFFF !important;
     opacity:1 !important;
     -webkit-text-fill-color:#FFFFFF !important;
+}
+@media (max-width:768px){
+
+.logo img{
+    width:140px;
+}
+
+.header{
+    padding:12px 15px;
+}
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.order-btn{
+    padding:12px 18px;
+    font-size:14px;
+}
+
 }
 /* ==========================================
    WEBSITE END

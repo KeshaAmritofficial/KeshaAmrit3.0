@@ -175,14 +175,20 @@ a{
     z-index:10;
 }
 .hero-content{
-    position:relative;
-    z-index:2;
     display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
+    grid-template-columns:0.9fr 1.1fr;
     align-items:center;
+    gap:60px;
+}
+.hero-left{
+    order:2;
 }
 
+.hero-right{
+    order:1;
+    display:flex;
+    justify-content:center;
+}
 .hero-left h1{
     font-size:58px;
     line-height:1.15;

@@ -34,7 +34,22 @@ a{
     max-width:1200px;
     margin:auto;
 }
+.top-bar{
+    background:#146536;
+    color:#fff;
+    text-align:center;
+    padding:10px 15px;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:.3px;
+}
 
+@media (max-width:768px){
+    .top-bar{
+        font-size:13px;
+        padding:8px 10px;
+    }
+}
 /* ==========================================
    HEADER
 ========================================== */

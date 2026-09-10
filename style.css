@@ -1762,4 +1762,80 @@ html{
         color: #FFD21F !important;
         -webkit-text-fill-color: #FFD21F !important;
     }
+
+/* ==========================================
+   FINAL DESKTOP PRICE VISIBILITY FIX
+========================================== */
+
+@media (min-width: 769px) {
+
+    .hero .hero-price {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        color: #ffffff !important;
+        text-align: left !important;
+    }
+
+    /* MRP ₹599 */
+    .hero .hero-price .mrp-line,
+    .hero .hero-price .mrp-line span {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+    }
+
+    .hero .hero-price .mrp-line span {
+        text-decoration: line-through !important;
+    }
+
+    /* ₹449 - YELLOW */
+    .hero .hero-price .sale-price,
+    .hero .hero-price .sale-price span {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        color: #FFD21F !important;
+        -webkit-text-fill-color: #FFD21F !important;
+        font-size: 58px !important;
+        font-weight: 800 !important;
+        line-height: 1 !important;
+    }
+
+    /* FREE SHIPPING + COD */
+    .hero .hero-price .price-benefits,
+    .hero .hero-price .price-benefits span {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+    }
+
+    .hero .hero-price .price-benefits {
+        align-items: center !important;
+        gap: 8px !important;
+    }
+
+    /* ORDER BUTTON */
+    .hero .hero-price .price-order-btn {
+        display: inline-flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        background: #FFD21F !important;
+        color: #075F32 !important;
+        -webkit-text-fill-color: #075F32 !important;
+        width: 200px !important;
+        height: 62px !important;
+        align-items: center !important;
+        justify-content: center !important;
+        border-radius: 40px !important;
+    }
+
+    .hero .hero-price .price-order-btn span {
+        color: #075F32 !important;
+        -webkit-text-fill-color: #075F32 !important;
+    }
 }

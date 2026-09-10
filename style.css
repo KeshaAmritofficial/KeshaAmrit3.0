@@ -440,74 +440,7 @@ text-align:center;
     background:#1d7f45;
     color:#fff;
 }
-.product-price {
-    margin-top: 25px;
-}
 
-.mrp {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-.mrp del {
-    color: #777;
-}
-
-.sale-price {
-    font-size: 56px;
-    line-height: 1;
-    font-weight: 800;
-    color: #2b8a3e;
-    margin-bottom: 25px;
-}
-
-.price-benefits {
-    font-size: 16px;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 30px;
-}
-
-.price-benefits span {
-    color: #999;
-    margin: 0 6px;
-}
-
-.price-order-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: #ffc928;
-    color: #075f32;
-    padding: 18px 38px;
-    border-radius: 40px;
-    font-size: 18px;
-    font-weight: 700;
-    text-decoration: none;
-    box-shadow: 0 12px 28px rgba(255, 201, 40, 0.35);
-    transition: 0.3s;
-}
-
-.price-order-btn:hover {
-    transform: translateY(-3px);
-    background: #ffbd00;
-}
-
-@media (max-width: 768px) {
-    .sale-price {
-        font-size: 50px;
-    }
-
-    .price-benefits {
-        font-size: 15px;
-    }
-
-    .price-order-btn {
-        width: 200px;
-        padding: 17px 25px;
-    }
-}
 /* ==========================================
    BENEFIT STRIP
 ========================================== */
@@ -1539,3 +1472,107 @@ html{
 /* ==========================================
    WEBSITE END
 ========================================== */
+
+/* ==========================================
+   PRICE SECTION - FINAL OVERRIDE
+========================================== */
+
+.hero .product-price {
+    display: block;
+    margin: 25px 0 5px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.hero .product-price .mrp {
+    display: block;
+    color: #ffffff !important;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.hero .product-price .mrp del {
+    color: #ffffff !important;
+    opacity: 0.75;
+}
+
+.hero .product-price .sale-price {
+    display: block;
+    color: #2e8b3c !important;
+    font-size: 58px;
+    line-height: 1;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hero .product-price .price-benefits {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    color: #ffffff !important;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+.hero .product-price .price-benefits span {
+    color: #ffffff !important;
+    opacity: 0.8;
+    margin: 0;
+}
+
+.hero .product-price .price-order-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: auto !important;
+    min-width: 198px;
+    padding: 17px 32px;
+    background: #ffc928 !important;
+    color: #075f32 !important;
+    border: none;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none !important;
+    box-shadow: 0 12px 30px rgba(255, 201, 40, 0.35);
+    transition: 0.3s;
+}
+
+.hero .product-price .price-order-btn:hover {
+    background: #ffbd00 !important;
+    color: #075f32 !important;
+    transform: translateY(-3px);
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .hero .product-price {
+        text-align: center;
+        margin: 18px auto 5px;
+    }
+
+    .hero .product-price .mrp {
+        font-size: 16px;
+    }
+
+    .hero .product-price .sale-price {
+        font-size: 50px;
+    }
+
+    .hero .product-price .price-benefits {
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    .hero .product-price .price-order-btn {
+        min-width: 200px;
+    }
+
+}

@@ -1690,3 +1690,71 @@ html{
     white-space: nowrap;
     text-shadow: 0 1px 5px rgba(0,0,0,0.35);
 }
+/* ==========================================
+   DESKTOP PRICE FIX
+========================================== */
+
+@media (min-width: 769px) {
+
+    .hero .hero-price {
+        display: block !important;
+        width: fit-content;
+        margin: 28px 0 10px !important;
+        padding: 0 !important;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        text-align: left !important;
+    }
+
+    .hero .mrp-line {
+        display: block !important;
+        color: #ffffff !important;
+        font-size: 17px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .hero .mrp-line span {
+        color: #ffffff !important;
+        text-decoration: line-through !important;
+    }
+
+    .hero .sale-price {
+        display: block !important;
+        color: #2b8a3e !important;
+        font-size: 58px !important;
+        font-weight: 800 !important;
+        line-height: 1 !important;
+        margin: 5px 0 20px !important;
+    }
+
+    .hero .price-benefits {
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        gap: 8px !important;
+        color: #ffffff !important;
+        font-size: 16px !important;
+        margin-bottom: 24px !important;
+    }
+
+    .hero .price-benefits span {
+        color: #ffffff !important;
+    }
+
+    .hero .price-order-btn {
+        display: inline-flex !important;
+        width: 200px !important;
+        height: 62px !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background: #ffc928 !important;
+        color: #075f32 !important;
+        border-radius: 40px !important;
+        font-size: 18px !important;
+        font-weight: 700 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+}

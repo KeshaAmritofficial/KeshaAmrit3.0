@@ -1575,11 +1575,6 @@ html{
     font-size:14px;
 }
 
-}
-/* ==========================================
-   WEBSITE END
-========================================== */
-
 
 /* Doctor name highlight */
 .hero .doctor-name{
@@ -1615,7 +1610,7 @@ html{
     text-decoration:line-through !important;
 }
 .hero .hero-price .sale-price{
-    color:#2b8a3e !important;
+    color:#FFD21F !important;
     font-size:56px !important;
     line-height:1 !important;
     font-weight:800 !important;

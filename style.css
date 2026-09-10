@@ -440,7 +440,74 @@ text-align:center;
     background:#1d7f45;
     color:#fff;
 }
+.product-price {
+    margin-top: 25px;
+}
 
+.mrp {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.mrp del {
+    color: #777;
+}
+
+.sale-price {
+    font-size: 56px;
+    line-height: 1;
+    font-weight: 800;
+    color: #2b8a3e;
+    margin-bottom: 25px;
+}
+
+.price-benefits {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.price-benefits span {
+    color: #999;
+    margin: 0 6px;
+}
+
+.price-order-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffc928;
+    color: #075f32;
+    padding: 18px 38px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 12px 28px rgba(255, 201, 40, 0.35);
+    transition: 0.3s;
+}
+
+.price-order-btn:hover {
+    transform: translateY(-3px);
+    background: #ffbd00;
+}
+
+@media (max-width: 768px) {
+    .sale-price {
+        font-size: 50px;
+    }
+
+    .price-benefits {
+        font-size: 15px;
+    }
+
+    .price-order-btn {
+        width: 200px;
+        padding: 17px 25px;
+    }
+}
 /* ==========================================
    BENEFIT STRIP
 ========================================== */

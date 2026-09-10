@@ -1756,5 +1756,10 @@ html{
         padding: 0 !important;
         margin: 0 !important;
     }
-
+@media (min-width: 769px) {
+    .hero .hero-price .sale-price,
+    .hero .hero-price .sale-price * {
+        color: #FFD21F !important;
+        -webkit-text-fill-color: #FFD21F !important;
+    }
 }
